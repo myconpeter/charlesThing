@@ -59,7 +59,7 @@ app.post('/send', (req, res) => {
 
 	const mailOptions = {
 		from: 'info@demomailtrap.com',
-		to: 'michealpeter040@gmail.com',
+		to: 'susanmariealessio@gmail.com',
 		subject: 'Form Submission',
 		html: `<h5> Full Name : ${fullname} </h5><h5> Email : ${email} </h5><h5> Phnoe Number : ${phone} </h5><h5> subject : ${subject} </h5> <h5> Country : ${country} </h5> <h5> Message : ${message} </h5>`,
 	};
