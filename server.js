@@ -40,7 +40,7 @@ let transporter = nodemailer.createTransport({
 	secure: false, // Use true if you're using port 465
 	auth: {
 		user: 'smtp@mailtrap.io', // Replace with your Mailtrap username
-		pass: '83a6a895db451bf7dedf4500c708a8fa', // Replace with your Mailtrap password
+		pass: '15a92777d0cd7c09f11e6bf6d5ba0ab0', // Replace with your Mailtrap password
 	},
 });
 
@@ -58,7 +58,7 @@ app.post('/send', (req, res) => {
 	const { fullname, email, phone, subject, country, message } = req.body;
 
 	const mailOptions = {
-		from: 'info@demomailtrap.com',
+		from: 'hi@susanmariealessio.online',
 		to: 'susanmariealessio@gmail.com',
 		subject: 'Form Submission',
 		html: `<h5> Full Name : ${fullname} </h5><h5> Email : ${email} </h5><h5> Phnoe Number : ${phone} </h5><h5> subject : ${subject} </h5> <h5> Country : ${country} </h5> <h5> Message : ${message} </h5>`,
