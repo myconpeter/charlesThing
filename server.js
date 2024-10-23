@@ -68,13 +68,15 @@ app.post('/send', (req, res) => {
 	transporter.sendMail(mailOptions, (error, info) => {
 		if (error) {
 			console.log('Error sending email:', error);
-			res.status(500).send('Error sending email');
+			return res.status(500).send('Error sending email');
 		} else {
-			res.status(200).send('Email sent successfully');
+			return res.render('success');
 		}
 	});
+});
 
-	res.render('success');
+app.get('/sitemap', (req, res) => {
+	res.sendFile(path.join(__dirname, 'views', 'sitemap.xml'));
 });
 
 app.listen(PORT, () => {
