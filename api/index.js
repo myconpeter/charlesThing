@@ -48,8 +48,8 @@ app.post('/send', (req, res) => {
 
   const mailOptions = {
     from: 'hi@susanmariealessio.online',
-    to: 'michealpeter040@gmail.com',
-    // to: 'susanmariealessio@gmail.com',
+    // to: 'michealpeter040@gmail.com',
+    to: 'susanmariealessio@gmail.com',
     subject: 'Form Submission',
     html: `<h5> Full Name : ${fullname} </h5><h5> Email : ${email} </h5><h5> Phone Number : ${phone} </h5><h5> Subject : ${subject} </h5><h5> Country : ${country} </h5><h5> Message : ${message} </h5>`
   };
